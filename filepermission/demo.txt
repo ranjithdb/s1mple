@@ -1,0 +1,4 @@
+chmod 764 demo.txt
+7 rwx owner
+6 rw group
+4 r others
