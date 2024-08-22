@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: ranjithdbas/custom-nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/var/opt/nginx
+    deploy:
+      replicas: 1
