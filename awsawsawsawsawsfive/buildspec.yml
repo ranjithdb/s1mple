@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+      - sudo yum -y update
+      - sudo yum install -y nginx
+      - sudo mkdir -p /usr/share/nginx/html
+  build:
+    commands:
+      - echo "Building the application"
+      - sudo cp index.html /usr/share/nginx/html
+      - sudo nginx
+
+artifacts:
+  files:
+    - index.html
