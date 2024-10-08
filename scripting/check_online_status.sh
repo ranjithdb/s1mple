@@ -1,5 +1,5 @@
 #!/bin/bash
-URL="https://google.com"
+URL="http://google.com"
 HTTP_CODE=$(curl -o /dev/null -s -w "%{http_code}\n" "$URL")
 echo "HTTP status code: $HTTP_CODE"
 
