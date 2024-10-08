@@ -1,5 +1,5 @@
 #!/bin/bash
-URL="http://guvi.in"
+URL="https://google.com"
 HTTP_CODE=$(curl -o /dev/null -s -w "%{http_code}\n" "$URL")
 echo "HTTP status code: $HTTP_CODE"
 
